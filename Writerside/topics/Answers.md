@@ -4,20 +4,22 @@
 
 The business problem was the following:
 
-The payroll, in the mexican context at least, involves a lot of rules many of them change every fiscal year. Some of the changes are somehow fixed, the change involves only a different amount or percentage in a tax or adding or removing rows from tables to be evaluated.
+The payroll, in the Mexican context at least, involves a lot of rules many of them change every fiscal year. Some of the changes are somehow fixed, the change involves only a different amount or percentage in a tax or adding or removing rows from tables to be evaluated.
+
 The problem is that the rules are not always fixed, sometimes the rules change in a way that the previous rules are not valid anymore.
-The god news is that the calculations always involve the same operations, sums, rests, multiplications, etc.
-The company was in charge of designing a payroll system that could work with any Mexican institution and could be easily updated with the new rules.
-Nowadays tools like **Truffle** or the **Spring Expression Language** could be used to solve this problem, but the point is that the _Payroll System_ was made in C++ more than 20 years ago.
+
+The good news is that the calculations always involve the same operations, sums, rests, multiplications, etc.
+
+The company was in charge of designing a payroll system that could work with any Mexican institution and could be easily updated with the new rules. Nowadays tools like **Truffle** or the **Spring Expression Language** could be used to solve this problem, but the point is that the _Payroll System_ was made in C++ more than 20 years ago.
 So the solution was creating a **Syntactic Analyzer** that could read the rules from a database and generate a **Syntax Tree** that could be evaluated to calculate the payroll.
-I wasn't involved in all the design, but I was in the team to create the **Syntactic Tree** based in... well a tree.
-The operation was simple and could be found in any algorithm book, but was quite satisfying to see it working.
+
+I wasn't involved in all the design, but I was in the team to create the **Syntactic Tree** based in... well a tree. The operation was simple and it could be found in any algorithm book, but was quite satisfying to see it working.
 
 Reference at [Aspel Noi](https://www.aspel.com.mx/noi?pag=beneficios)
 
 ### 2. What is an underutilized coding pattern? ( i.e. Abstract Factory ). Why is this pattern valuable?
 
-This question is hard to answer because I know many applications that use all the documented **Design Patterns**. Nonetheless I'm going to take as example the **State Machine**.
+This question is hard to answer because I know many applications that, in a set, use all the documented **Design Patterns**. Nonetheless I'm going to take as example the **State Machine**.
 
 **State machine** is one of the design patterns that have the limitation of resolve a specific problem. I think is not as general as **Abstract Factory** or **Command** and its utilization could be thought as limited maybe because that many people don't mention it often.
 
